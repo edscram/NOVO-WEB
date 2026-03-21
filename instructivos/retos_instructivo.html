@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Instructivo Yengha de Retos - NOVO</title>
+    <link rel="stylesheet" href="../estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<nav class="menu">
+  <div class="menu-izquierda">
+    <a href="../index.html">Inicio</a>
+    <a href="../catalogo.html" class="activo">Catálogo</a>
+    <a href="../empresa.html">Empresa</a>
+    <a href="../contacto.html">Contacto</a>
+  </div>
+
+  <div class="menu-derecha">
+    <img src="../imagenes/logo.png" alt="NOVO" class="logo-menu">
+  </div>
+</nav>
+
+<div class="contenedor contenido-izquierda">
+
+    <div class="encabezado-instructivo">
+
+    <a href="#" id="boton-volver-producto" class="boton-volver">
+      <i class="fas fa-arrow-left"></i>
+    </a>
+
+    <h1>Instructivo Yengha de Retos</h1>
+
+</div>
+
+    
+    <h2>Descripción</h2>
+
+    <p>
+    La <strong>Yengha de Retos</strong> es un juego de habilidad, pulso y concentración para dos o más jugadores.
+    </p>
+
+    <p>
+    El juego consiste en construir una torre con piezas de madera y retirar bloques uno por uno
+    sin que la estructura se derrumbe.
+    </p>
+
+    <p>
+    Cada pieza contiene un <strong>reto o desafío</strong>, lo que añade un componente adicional
+    de diversión y dificultad.
+    </p>
+
+    <h2>Componentes</h2>
+
+    <ul>
+    <li>63 piezas de madera</li>
+    <li>21 piezas con retos impresos</li>
+    </ul>
+
+    <h2>Preparación</h2>
+
+    <ol>
+    <li>Coloque todas las piezas <strong>boca abajo</strong>.</li>
+    <li>Mezcle bien las piezas.</li>
+    <li>Construya la torre colocando <strong>3 piezas por nivel</strong>.</li>
+    <li>Cada nivel debe colocarse <strong>perpendicular al nivel anterior</strong>.</li>
+    <li>Asegúrese de que la torre esté <strong>estable</strong> antes de iniciar el juego.</li>
+    </ol>
+
+    <h2>Objetivo del juego</h2>
+
+    <p>
+    Evitar ser el jugador que <strong>derriba la torre</strong>.
+    </p>
+
+    <h2>Desarrollo del juego</h2>
+
+    <p>
+    Los jugadores participan por turnos.
+    </p>
+
+    <p>
+    En su turno, cada jugador debe:
+    </p>
+
+    <ol>
+    <li>Retirar <strong>una sola pieza</strong> de cualquier nivel de la torre.</li>
+    <li>Utilizar <strong>una sola mano</strong>.</li>
+    <li>Leer y cumplir el <strong>reto o desafío</strong> que está en la cara inferior de la pieza, si aplica.</li>
+    <li>Colocar la pieza retirada en la <strong>parte superior de la torre</strong>, formando nuevos niveles de 3 piezas.</li>
+    </ol>
+
+    <h2>Reglas importantes</h2>
+
+    <ul>
+    <li>Solo se puede retirar <strong>una pieza por turno</strong>.</li>
+    <li>Está permitido tocar varias piezas para evaluar cuál está más suelta, pero solo se puede retirar una.</li>
+    <li>Las piezas deben retirarse con cuidado para no desestabilizar la torre.</li>
+    <li>Los retos deben cumplirse según lo indicado en la pieza.</li>
+    <li>Las piezas retiradas siempre deben colocarse en la parte superior.</li>
+    </ul>
+
+    <h2>Final del juego</h2>
+
+    <p>
+    El juego termina cuando la torre se derrumba.
+    </p>
+
+    <p>
+    El jugador que provoca la caída de la torre <strong>pierde la partida</strong>.
+    </p>
+
+    <p>
+    En ese momento, el juego finaliza inmediatamente.
+    </p>
+
+</div>
+
+<script>
+  const archivo = window.location.pathname.split("/").pop();
+  const slug = archivo.replace("_instructivo.html", "");
+  const urlProducto = "../productos/" + slug + ".html";
+  document.getElementById("boton-volver-producto").href = urlProducto;
+</script>
+
+</body>
+
+</html>

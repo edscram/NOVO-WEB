@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Instructivo Tangram - NOVO</title>
+    <link rel="stylesheet" href="../estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<nav class="menu">
+  <div class="menu-izquierda">
+    <a href="../index.html">Inicio</a>
+    <a href="../catalogo.html" class="activo">Catálogo</a>
+    <a href="../empresa.html">Empresa</a>
+    <a href="../contacto.html">Contacto</a>
+  </div>
+
+  <div class="menu-derecha">
+    <img src="../imagenes/logo.png" alt="NOVO" class="logo-menu">
+  </div>
+</nav>
+
+<div class="contenedor contenido-izquierda">
+
+    <div class="encabezado-instructivo">
+
+    <a href="#" id="boton-volver-producto" class="boton-volver">
+      <i class="fas fa-arrow-left"></i>
+    </a>
+
+    <h1>Instructivo Tangram</h1>
+
+</div>
+
+    
+    <h2>Descripción</h2>
+
+    <p>
+    El <strong>Tangram</strong> es un juego de ingenio y creatividad inspirado en el clásico
+    rompecabezas chino conocido como "tabla de la sabiduría".
+    </p>
+
+    <p>
+    En esta versión, el rompecabezas está compuesto por <strong>8 piezas geométricas</strong>
+    que permiten formar una gran variedad de figuras y siluetas.
+    </p>
+
+    <p>
+    El objetivo es reconstruir las formas mostradas en las cartillas utilizando
+    <strong>todas las piezas</strong>, sin superponerlas.
+    </p>
+
+    <p>
+    Este juego estimula la imaginación, la percepción espacial y la capacidad de resolución
+    de problemas. Es apto para todas las edades.
+    </p>
+
+    <h2>Componentes</h2>
+
+    <ul>
+    <li>8 piezas geométricas
+        <ul>
+            <li>3 triángulos</li>
+            <li>1 trapecio grande</li>
+            <li>2 trapecios medianos</li>
+            <li>2 trapecios pequeños</li>
+        </ul>
+    </li>
+    <li>4 cartillas de desafíos</li>
+    </ul>
+
+    <p>
+    Cada cartilla tiene <strong>dos caras, lado A y lado B</strong>.
+    </p>
+
+    <h2>Preparación</h2>
+
+    <ol>
+    <li>Coloque las piezas del tangram sobre una superficie plana.</li>
+    <li>Elija una de las figuras que aparecen en las cartillas.</li>
+    <li>Observe cuidadosamente la silueta que se debe construir.</li>
+    </ol>
+
+    <h2>Objetivo del juego</h2>
+
+    <p>
+    Construir la figura indicada en la cartilla utilizando <strong>las 8 piezas del tangram</strong>.
+    </p>
+
+    <h2>Desarrollo del juego</h2>
+
+    <p>
+    Para resolver cada desafío:
+    </p>
+
+    <ol>
+    <li>Observe la silueta mostrada en la cartilla.</li>
+    <li>Utilice <strong>todas las piezas</strong> para reproducir la forma.</li>
+    <li>Las piezas deben colocarse dentro de la figura respetando su contorno.</li>
+    </ol>
+
+    <p>
+    Las piezas <strong>no pueden superponerse</strong>.
+    </p>
+
+    <h2>Niveles de dificultad</h2>
+
+    <p>
+    El juego incluye <strong>4 cartillas</strong>, cada una con dos niveles de dificultad.
+    </p>
+
+    <p>
+    El orden recomendado es:
+    </p>
+
+    <ul>
+    <li>1A – nivel inicial</li>
+    <li>1B – nivel fácil</li>
+    <li>2A – nivel intermedio</li>
+    <li>2B – nivel intermedio avanzado</li>
+    <li>3A – nivel avanzado</li>
+    <li>3B – nivel avanzado</li>
+    <li>4A – nivel experto</li>
+    <li>4B – nivel experto avanzado</li>
+    </ul>
+
+    <p>
+    Las figuras se vuelven progresivamente <strong>más complejas</strong> a medida que se avanza
+    en las cartillas.
+    </p>
+
+    <h2>Reglas importantes</h2>
+
+    <ul>
+    <li>Siempre deben utilizarse <strong>las 8 piezas</strong>.</li>
+    <li>Las piezas <strong>no pueden traslaparse ni superponerse</strong>.</li>
+    <li>Las piezas pueden rotarse o voltearse para encontrar la solución.</li>
+    </ul>
+
+    <h2>Beneficios del juego</h2>
+
+    <ul>
+    <li>Desarrolla la <strong>percepción espacial</strong>.</li>
+    <li>Estimula la <strong>creatividad</strong>.</li>
+    <li>Mejora la <strong>concentración</strong>.</li>
+    <li>Favorece la <strong>resolución de problemas</strong>.</li>
+    </ul>
+
+    <h2>Sugerencia de juego</h2>
+
+    <p>
+    Comience por las figuras más sencillas de la <strong>cartilla 1, lado A</strong> y avance
+    progresivamente hasta los desafíos más complejos de la <strong>cartilla 4, lado B</strong>.
+    </p>
+
+</div>
+
+<script>
+  const archivo = window.location.pathname.split("/").pop();
+  const slug = archivo.replace("_instructivo.html", "");
+  const urlProducto = "../productos/" + slug + ".html";
+  document.getElementById("boton-volver-producto").href = urlProducto;
+</script>
+
+</body>
+
+</html>

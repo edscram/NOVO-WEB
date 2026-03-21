@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Instructivo Cuatro en línea - NOVO</title>
+    <link rel="stylesheet" href="../estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<nav class="menu">
+  <div class="menu-izquierda">
+    <a href="../index.html">Inicio</a>
+    <a href="../catalogo.html" class="activo">Catálogo</a>
+    <a href="../empresa.html">Empresa</a>
+    <a href="../contacto.html">Contacto</a>
+  </div>
+
+  <div class="menu-derecha">
+    <img src="../imagenes/logo.png" alt="NOVO" class="logo-menu">
+  </div>
+</nav>
+
+<div class="contenedor contenido-izquierda">
+
+    <div class="encabezado-instructivo">
+
+    <a href="#" id="boton-volver-producto" class="boton-volver">
+      <i class="fas fa-arrow-left"></i>
+    </a>
+
+    <h1>Instructivo Cuatro en línea</h1>
+
+</div>
+
+    
+    <h2>Descripción</h2>
+
+    <p>
+    El <strong>Cuatro en línea</strong> es un juego clásico de estrategia y observación para dos jugadores.
+    Cada jugador intenta colocar sus fichas en el tablero formando una línea de cuatro fichas consecutivas
+    antes que su oponente.
+    </p>
+
+    <p>
+    Las fichas caen por gravedad dentro de las columnas del tablero, lo que obliga a los jugadores a planificar
+    sus movimientos y anticipar las jugadas del adversario.
+    </p>
+
+    <p>
+    Este juego desarrolla la lógica, la concentración y la capacidad de reconocer patrones.
+    </p>
+
+    <h2>Componentes</h2>
+
+    <ul>
+    <li>1 tablero vertical con columnas</li>
+    <li>Fichas de dos colores diferentes</li>
+    </ul>
+
+    <p>
+    Cada jugador utiliza un color de fichas.
+    </p>
+
+    <h2>Preparación</h2>
+
+    <ol>
+    <li>Coloque el tablero sobre una superficie plana.</li>
+    <li>Cada jugador elige un color de fichas.</li>
+    <li>Todas las fichas se colocan fuera del tablero antes de comenzar.</li>
+    <li>Los jugadores deciden quién inicia la partida.</li>
+    </ol>
+
+    <h2>Objetivo del juego</h2>
+
+    <p>
+    El objetivo es ser el primer jugador en formar <strong>una línea de cuatro fichas consecutivas</strong>
+    de su mismo color.
+    </p>
+
+    <p>
+    La línea puede formarse en cualquier dirección:
+    </p>
+
+    <ul>
+    <li>Horizontal</li>
+    <li>Vertical</li>
+    <li>Diagonal</li>
+    </ul>
+
+    <h2>Desarrollo del juego</h2>
+
+    <ol>
+    <li>Los jugadores se turnan para colocar una ficha en el tablero.</li>
+    <li>En cada turno, el jugador deja caer una ficha en cualquiera de las columnas disponibles.</li>
+    <li>La ficha descenderá hasta ocupar la posición libre más baja dentro de esa columna.</li>
+    <li>Los jugadores continúan alternando turnos mientras intentan crear una línea de cuatro fichas.</li>
+    </ol>
+
+    <p>
+    Durante el juego también es importante <strong>bloquear las posibles líneas del oponente</strong>
+    para evitar que gane.
+    </p>
+
+    <h2>Reglas importantes</h2>
+
+    <ul>
+    <li>No se puede colocar una ficha en una columna que ya esté completamente llena.</li>
+    <li>Una vez que una ficha ha sido soltada en una columna, no puede moverse.</li>
+    <li>Los jugadores deben respetar los turnos alternados.</li>
+    </ul>
+
+    <h2>Final del juego</h2>
+
+    <p>
+    La partida termina cuando ocurre una de las siguientes situaciones:
+    </p>
+
+    <h3>Victoria</h3>
+
+    <p>
+    Un jugador logra formar una línea de <strong>cuatro fichas consecutivas</strong>
+    en dirección horizontal, vertical o diagonal.
+    </p>
+
+    <h3>Empate</h3>
+
+    <p>
+    El tablero se llena completamente y ningún jugador ha logrado formar una línea de cuatro fichas.
+    </p>
+
+    <h2>Consejos estratégicos</h2>
+
+    <ul>
+    <li>Observe con atención las posibilidades de formar líneas horizontales, verticales y diagonales.</li>
+    <li>Bloquee a tiempo las jugadas del oponente.</li>
+    <li>Procure controlar las columnas centrales del tablero.</li>
+    <li>Piense no solo en su jugada actual, sino también en la siguiente.</li>
+    </ul>
+
+</div>
+
+<script>
+  // Obtener nombre del archivo actual (ej: seis_instructivo.html)
+  const archivo = window.location.pathname.split("/").pop();
+
+  // Convertir a slug (quitar "_instructivo.html")
+  const slug = archivo.replace("_instructivo.html", "");
+
+  // Construir ruta al producto
+  const urlProducto = "../productos/" + slug + ".html";
+
+  // Asignar al botón
+  document.getElementById("boton-volver-producto").href = urlProducto;
+</script>
+
+</body>
+
+</html>

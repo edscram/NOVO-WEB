@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Instructivo Hockey - NOVO</title>
+    <link rel="stylesheet" href="../estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<nav class="menu">
+  <div class="menu-izquierda">
+    <a href="../index.html">Inicio</a>
+    <a href="../catalogo.html" class="activo">Catálogo</a>
+    <a href="../empresa.html">Empresa</a>
+    <a href="../contacto.html">Contacto</a>
+  </div>
+
+  <div class="menu-derecha">
+    <img src="../imagenes/logo.png" alt="NOVO" class="logo-menu">
+  </div>
+</nav>
+
+<div class="contenedor contenido-izquierda">
+
+    <div class="encabezado-instructivo">
+
+    <a href="#" id="boton-volver-producto" class="boton-volver">
+      <i class="fas fa-arrow-left"></i>
+    </a>
+
+    <h1>Instructivo Hockey</h1>
+
+</div>
+
+    
+    <h2>Descripción</h2>
+
+    <p>
+    El <strong>Hockey</strong> es un juego rápido de reflejos y puntería para dos jugadores.
+    Cada jugador debe lanzar sus fichas hacia el campo contrario utilizando una liga elástica.
+    </p>
+
+    <p>
+    El objetivo es lograr pasar todas las fichas propias a través del agujero ubicado en el centro
+    de la pared divisoria que separa los dos campos de juego.
+    </p>
+
+    <h2>Componentes</h2>
+
+    <ul>
+    <li>1 tablero con dos campos de juego</li>
+    <li>1 pared divisoria con un agujero central</li>
+    <li>10 fichas, 5 de cada color</li>
+    <li>2 ligas elásticas</li>
+    </ul>
+
+    <h2>Preparación</h2>
+
+    <ol>
+    <li>Coloque el tablero sobre una superficie plana.</li>
+    <li>Cada jugador se ubica frente a uno de los campos.</li>
+    <li>Cada jugador recibe <strong>5 fichas de un mismo color</strong>.</li>
+    <li>Las fichas se colocan en el campo correspondiente a cada jugador.</li>
+    </ol>
+
+    <h2>Objetivo del juego</h2>
+
+    <p>
+    Ser el primer jugador en <strong>pasar sus 5 fichas al campo del oponente</strong>
+    a través del agujero central.
+    </p>
+
+    <h2>Desarrollo del juego</h2>
+
+    <p>
+    Los dos jugadores juegan <strong>simultáneamente</strong>.
+    </p>
+
+    <p>
+    Para lanzar una ficha:
+    </p>
+
+    <ol>
+    <li>Coloque una ficha contra la liga elástica.</li>
+    <li>Tire de la liga hacia atrás usando la misma ficha.</li>
+    <li>Suelte la liga para impulsar la ficha.</li>
+    </ol>
+
+    <p>
+    La ficha debe deslizarse por el tablero y pasar por el <strong>agujero de la pared divisoria</strong>
+    hacia el campo contrario.
+    </p>
+
+    <p>
+    Las fichas que regresan al propio campo deben volver a intentarse lanzar.
+    </p>
+
+    <h2>Reglas importantes</h2>
+
+    <ul>
+    <li>Las fichas solo pueden impulsarse usando la <strong>liga elástica</strong>.</li>
+    <li>No se permite empujar las fichas con la mano.</li>
+    <li>Los jugadores pueden lanzar fichas de manera continua durante la partida.</li>
+    <li>Las fichas deben pasar totalmente por el <strong>agujero central</strong> para contar como válidas.</li>
+    </ul>
+
+    <h2>Final del juego</h2>
+
+    <p>
+    El juego termina cuando uno de los jugadores logra pasar <strong>sus 5 fichas al campo contrario</strong>.
+    </p>
+
+    <p>
+    Ese jugador es declarado ganador.
+    </p>
+
+    <h2>Consejos estratégicos</h2>
+
+    <ul>
+    <li>Apuntar directamente al agujero aumenta la precisión.</li>
+    <li>Lanzamientos rápidos pueden sorprender al oponente.</li>
+    <li>Mantener las fichas organizadas facilita disparos más rápidos.</li>
+    </ul>
+
+</div>
+
+<script>
+  const archivo = window.location.pathname.split("/").pop();
+  const slug = archivo.replace("_instructivo.html", "");
+  const urlProducto = "../productos/" + slug + ".html";
+  document.getElementById("boton-volver-producto").href = urlProducto;
+</script>
+
+</body>
+
+</html>

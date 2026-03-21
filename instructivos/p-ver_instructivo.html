@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Instructivo Pista Vertical - NOVO</title>
+    <link rel="stylesheet" href="../estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<nav class="menu">
+  <div class="menu-izquierda">
+    <a href="../index.html">Inicio</a>
+    <a href="../catalogo.html" class="activo">Catálogo</a>
+    <a href="../empresa.html">Empresa</a>
+    <a href="../contacto.html">Contacto</a>
+  </div>
+
+  <div class="menu-derecha">
+    <img src="../imagenes/logo.png" alt="NOVO" class="logo-menu">
+  </div>
+</nav>
+
+<div class="contenedor contenido-izquierda">
+
+    <div class="encabezado-instructivo">
+
+    <a href="#" id="boton-volver-producto" class="boton-volver">
+      <i class="fas fa-arrow-left"></i>
+    </a>
+
+    <h1>Instructivo Pista Vertical</h1>
+
+</div>
+
+    
+    <h2>Descripción</h2>
+
+    <p>
+    <strong>Pista Vertical</strong> es un juego de destreza diseñado para estimular la concentración
+    y desarrollar la coordinación motriz.
+    </p>
+
+    <p>
+    El juego consiste en mantener un flujo continuo de coches descendiendo por una pista vertical
+    formada por varios niveles inclinados.
+    </p>
+
+    <p>
+    Este ejercicio ayuda a mejorar la motricidad fina y gruesa, así como la coordinación ojo-mano.
+    </p>
+
+    <h2>Componentes</h2>
+
+    <ul>
+    <li>1 estructura de pista vertical</li>
+    <li>2 coches de madera</li>
+    </ul>
+
+    <h2>Preparación</h2>
+
+    <ol>
+    <li>Coloque la pista sobre una superficie firme y estable.</li>
+    <li>Ubique los coches en la parte superior de la pista.</li>
+    </ol>
+
+    <h2>Objetivo del juego</h2>
+
+    <p>
+    Mantener un flujo continuo de coches descendiendo por la pista sin permitir que alguno
+    llegue al final y se detenga.
+    </p>
+
+    <h2>Desarrollo del juego</h2>
+
+    <p>
+    El juego utiliza <strong>dos coches</strong> que se mueven de forma continua por la pista.
+    </p>
+
+    <ol>
+    <li>Coloque el <strong>primer coche</strong> en la parte superior de la pista.</li>
+    <li>Cuando el primer coche esté descendiendo, coloque el <strong>segundo coche</strong> en la parte superior.</li>
+    <li>Antes de que el segundo coche llegue al final, el primer coche ya habrá terminado su recorrido.</li>
+    <li>Tome el primer coche y colóquelo nuevamente en la parte superior de la pista.</li>
+    </ol>
+
+    <p>
+    Repitiendo este proceso se genera un <strong>movimiento continuo de coches</strong>
+    descendiendo por la pista.
+    </p>
+
+    <h2>Reglas importantes</h2>
+
+    <ul>
+    <li>El juego se realiza únicamente con <strong>dos coches</strong>.</li>
+    <li>Siempre debe colocarse el siguiente coche antes de que el anterior termine completamente su recorrido.</li>
+    <li>Cuando un coche llegue al final, debe tomarse inmediatamente y colocarse nuevamente en la parte superior.</li>
+    <li>El objetivo es mantener el <strong>movimiento continuo</strong> sin interrupciones.</li>
+    </ul>
+
+    <h2>Sugerencia de uso</h2>
+
+    <p>
+    Se recomienda realizar <strong>secuencias de 6 repeticiones con cada mano</strong>,
+    alternando derecha e izquierda.
+    </p>
+
+    <p>
+    Este ejercicio ayuda a mejorar:
+    </p>
+
+    <ul>
+    <li>La concentración</li>
+    <li>La coordinación ojo-mano</li>
+    <li>La motricidad fina y gruesa</li>
+    </ul>
+
+    <h2>Beneficios del juego</h2>
+
+    <ul>
+    <li>Favorece la atención y la concentración.</li>
+    <li>Estimula la coordinación motora.</li>
+    <li>Desarrolla habilidades de control manual.</li>
+    <li>Promueve la práctica repetitiva para mejorar la precisión.</li>
+    </ul>
+
+</div>
+
+<script>
+  const archivo = window.location.pathname.split("/").pop();
+  const slug = archivo.replace("_instructivo.html", "");
+  const urlProducto = "../productos/" + slug + ".html";
+  document.getElementById("boton-volver-producto").href = urlProducto;
+</script>
+
+</body>
+
+</html>

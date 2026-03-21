@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Instructivo Yengha de Kapybara - NOVO</title>
+    <link rel="stylesheet" href="../estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<nav class="menu">
+  <div class="menu-izquierda">
+    <a href="../index.html">Inicio</a>
+    <a href="../catalogo.html" class="activo">Catálogo</a>
+    <a href="../empresa.html">Empresa</a>
+    <a href="../contacto.html">Contacto</a>
+  </div>
+
+  <div class="menu-derecha">
+    <img src="../imagenes/logo.png" alt="NOVO" class="logo-menu">
+  </div>
+</nav>
+
+<div class="contenedor contenido-izquierda">
+
+    <div class="encabezado-instructivo">
+
+    <a href="#" id="boton-volver-producto" class="boton-volver">
+      <i class="fas fa-arrow-left"></i>
+    </a>
+
+    <h1>Instructivo Yengha de Kapybara</h1>
+
+</div>
+
+    <h2>Descripción</h2>
+
+    <p>
+    La <strong>Yengha de Kapybara</strong> es un juego de habilidad, equilibrio y estrategia para todas las edades.
+    </p>
+
+    <p>
+    Además de la mecánica clásica de retirar piezas sin derribar la torre, el juego incorpora fichas especiales con
+    <strong>kapybaras de la suerte</strong> y <strong>datos curiosos</strong>, lo que añade un componente lúdico y educativo.
+    </p>
+
+    <h2>Componentes</h2>
+
+    <ul>
+    <li>54 fichas en total
+        <ul>
+            <li>5 fichas con kapybaras de la suerte</li>
+            <li>16 fichas con datos curiosos</li>
+            <li>33 fichas en blanco</li>
+        </ul>
+    </li>
+    </ul>
+
+    <h2>Objetivo del juego</h2>
+
+    <p>
+    Retirar fichas sin derribar la torre y reunir la mayor cantidad de <strong>kapybaras de la suerte</strong>.
+    </p>
+
+    <h2>Preparación</h2>
+
+    <ol>
+    <li>Coloque todas las fichas <strong>boca abajo</strong>.</li>
+    <li>Mezcle bien las piezas.</li>
+    <li>Construya una torre de <strong>18 niveles</strong> con 3 fichas por nivel.</li>
+    <li>Cada nivel debe colocarse <strong>perpendicular al anterior</strong>.</li>
+    </ol>
+
+    <h2>Desarrollo del juego</h2>
+
+    <ol>
+    <li>Se sortea quién inicia la partida.</li>
+    <li>Los jugadores juegan por turnos en sentido de las agujas del reloj.</li>
+    </ol>
+
+    <p>En su turno, cada jugador debe:</p>
+
+    <ul>
+    <li>Retirar <strong>una ficha con una sola mano</strong>.</li>
+    <li>Colocarla en la <strong>parte superior de la torre</strong>.</li>
+    <li>Si encuentra una ficha especial:
+        <ul>
+            <li>Kapybara → la conserva</li>
+            <li>Dato curioso → lo lee en voz alta</li>
+        </ul>
+    </li>
+    </ul>
+
+    <h2>Reglas importantes</h2>
+
+    <ul>
+    <li>Solo se puede retirar una ficha por turno.</li>
+    <li>No se pueden retirar fichas del nivel superior incompleto.</li>
+    <li>Las piezas deben colocarse siempre en la parte superior.</li>
+    <li>Las fichas de kapybara se conservan.</li>
+    <li>Los datos curiosos deben leerse en voz alta.</li>
+    </ul>
+
+    <h2>Final del juego</h2>
+
+    <p>
+    El juego termina cuando la torre se derrumba o cuando se han encontrado las 5 fichas de kapybara.
+    </p>
+
+    <h2>Ganador</h2>
+
+    <p>
+    Gana el jugador que tenga la mayor cantidad de <strong>kapybaras de la suerte</strong>.
+    </p>
+
+    <h2>Empate</h2>
+
+    <p>
+    En caso de empate, los jugadores reconstruyen la torre y juegan otra ronda.
+    </p>
+
+</div>
+
+<script>
+  const archivo = window.location.pathname.split("/").pop();
+  const slug = archivo.replace("_instructivo.html", "");
+  const urlProducto = "../productos/" + slug + ".html";
+  document.getElementById("boton-volver-producto").href = urlProducto;
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Instructivo Dominó - NOVO</title>
+    <link rel="stylesheet" href="../estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<nav class="menu">
+  <div class="menu-izquierda">
+    <a href="../index.html">Inicio</a>
+    <a href="../catalogo.html" class="activo">Catálogo</a>
+    <a href="../empresa.html">Empresa</a>
+    <a href="../contacto.html">Contacto</a>
+  </div>
+
+  <div class="menu-derecha">
+    <img src="../imagenes/logo.png" alt="NOVO" class="logo-menu">
+  </div>
+</nav>
+
+<div class="contenedor contenido-izquierda">
+
+    <div class="encabezado-instructivo">
+
+    <a href="#" id="boton-volver-producto" class="boton-volver">
+      <i class="fas fa-arrow-left"></i>
+    </a>
+
+    <h1>Instructivo Dominó</h1>
+
+</div>
+
+    
+    <h2>Descripción</h2>
+
+    <p>
+    El <strong>Dominó</strong> es un juego clásico de estrategia y observación para
+    <strong>2 a 4 jugadores</strong>. Cada jugador intenta colocar sus fichas haciendo coincidir
+    los números con los extremos abiertos en la mesa.
+    </p>
+
+    <p>
+    El objetivo principal es quedarse sin fichas antes que los demás jugadores o tener
+    la menor cantidad de puntos cuando el juego se bloquea.
+    </p>
+
+    <h2>Componentes</h2>
+
+    <ul>
+    <li>28 fichas de dominó</li>
+    </ul>
+
+    <p>
+    Cada ficha está dividida en dos lados y cada lado tiene un número de puntos del 0 al 6.
+    </p>
+
+    <h2>Preparación</h2>
+
+    <ol>
+    <li>Coloque todas las fichas boca abajo sobre la mesa.</li>
+    <li>Mezcle bien las fichas.</li>
+    <li>Cada jugador toma <strong>7 fichas</strong>.</li>
+    <li>Las fichas restantes se dejan a un lado formando el <strong>pozo</strong> (opcional según la variante).</li>
+    </ol>
+
+    <h2>Objetivo del juego</h2>
+
+    <p>
+    Ser el primer jugador en quedarse sin fichas o tener la menor cantidad de puntos
+    cuando el juego queda bloqueado.
+    </p>
+
+    <h2>Desarrollo del juego</h2>
+
+    <p>
+    El jugador que tenga el <strong>doble más alto</strong> comienza la partida.
+    </p>
+
+    <p>
+    Ejemplo de dobles en orden: 6-6, 5-5, 4-4, 3-3, etc.
+    </p>
+
+    <p>
+    El jugador inicial coloca su ficha en el centro de la mesa.
+    </p>
+
+    <p>
+    Luego los jugadores continúan jugando por turnos en sentido horario.
+    </p>
+
+    <p>
+    En su turno, un jugador debe colocar una ficha que tenga un número igual a uno de los extremos abiertos.
+    </p>
+
+    <p>
+    La ficha debe colocarse uniendo los números iguales.
+    </p>
+
+    <p>
+    Ejemplo: si uno de los extremos tiene un <strong>6</strong>, se puede colocar cualquier ficha que tenga <strong>6</strong>.
+    </p>
+
+    <h2>Reglas importantes</h2>
+
+    <ul>
+    <li>Solo se puede jugar una ficha por turno.</li>
+    <li>Las fichas deben coincidir con uno de los números abiertos en la mesa.</li>
+    <li>Las fichas dobles se colocan de forma perpendicular para distinguirlas.</li>
+    <li>Los jugadores deben mantener sus fichas ocultas.</li>
+    </ul>
+
+    <h2>Si un jugador no puede jugar</h2>
+
+    <h3>Dominó cerrado</h3>
+
+    <p>
+    Si un jugador no tiene una ficha que coincida, simplemente <strong>pierde su turno</strong>.
+    </p>
+
+    <h3>Dominó con robo</h3>
+
+    <ol>
+    <li>Debe tomar una ficha del pozo.</li>
+    <li>Si la ficha robada sirve, puede jugarla inmediatamente.</li>
+    <li>Si no sirve, pierde su turno.</li>
+    </ol>
+
+    <h2>Final del juego</h2>
+
+    <p>
+    El juego puede terminar de dos formas:
+    </p>
+
+    <h3>Un jugador se queda sin fichas</h3>
+
+    <p>
+    Ese jugador gana inmediatamente la ronda.
+    </p>
+
+    <h3>Juego bloqueado</h3>
+
+    <p>
+    El juego se bloquea cuando ningún jugador puede colocar fichas.
+    </p>
+
+    <p>
+    En este caso:
+    </p>
+
+    <ol>
+    <li>Cada jugador suma los puntos de las fichas que aún tiene.</li>
+    <li>Gana el jugador que tenga <strong>menos puntos</strong>.</li>
+    </ol>
+
+    <h2>Puntuación de las fichas</h2>
+
+    <p>
+    El valor de una ficha es la <strong>suma de los puntos de sus dos lados</strong>.
+    </p>
+
+    <p>
+    Ejemplos:
+    </p>
+
+    <ul>
+    <li>Ficha 6-5 = 11 puntos</li>
+    <li>Ficha 4-3 = 7 puntos</li>
+    <li>Ficha 2-0 = 2 puntos</li>
+    </ul>
+
+    <h2>Consejos estratégicos</h2>
+
+    <ul>
+    <li>Observe qué números ya han sido jugados.</li>
+    <li>Intente mantener varias opciones de juego disponibles.</li>
+    <li>Evite quedarse con fichas de alto valor si el juego se bloquea.</li>
+    </ul>
+
+</div>
+
+<script>
+  const archivo = window.location.pathname.split("/").pop();
+  const slug = archivo.replace("_instructivo.html", "");
+  const urlProducto = "../productos/" + slug + ".html";
+  document.getElementById("boton-volver-producto").href = urlProducto;
+</script>
+
+</body>
+
+</html>

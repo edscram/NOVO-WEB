@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Instructivo Torres de Hanói - NOVO</title>
+    <link rel="stylesheet" href="../estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<nav class="menu">
+  <div class="menu-izquierda">
+    <a href="../index.html">Inicio</a>
+    <a href="../catalogo.html" class="activo">Catálogo</a>
+    <a href="../empresa.html">Empresa</a>
+    <a href="../contacto.html">Contacto</a>
+  </div>
+
+  <div class="menu-derecha">
+    <img src="../imagenes/logo.png" alt="NOVO" class="logo-menu">
+  </div>
+</nav>
+
+<div class="contenedor contenido-izquierda">
+
+    <div class="encabezado-instructivo">
+
+    <a href="#" id="boton-volver-producto" class="boton-volver">
+      <i class="fas fa-arrow-left"></i>
+    </a>
+
+    <h1>Instructivo Torres de Hanói</h1>
+
+</div>
+
+    
+    <h2>Descripción</h2>
+
+    <p>
+    Las <strong>Torres de Hanói</strong> son un clásico rompecabezas matemático inventado en 1883
+    por el matemático francés Édouard Lucas.
+    </p>
+
+    <p>
+    El juego consiste en trasladar una torre de discos de un poste a otro utilizando un tercer
+    poste como apoyo, siguiendo reglas específicas.
+    </p>
+
+    <p>
+    Este juego desarrolla la lógica, la planificación y la capacidad de resolver problemas paso a paso.
+    </p>
+
+    <h2>Componentes</h2>
+
+    <ul>
+    <li>1 base de madera con <strong>3 postes</strong></li>
+    <li><strong>8 discos</strong> de diferentes tamaños</li>
+    </ul>
+
+    <h2>Preparación</h2>
+
+    <ol>
+    <li>Coloque los <strong>8 discos apilados en uno de los postes</strong>.</li>
+    <li>Los discos deben estar ordenados <strong>del más grande abajo al más pequeño arriba</strong>.</li>
+    <li>Los otros dos postes quedan vacíos.</li>
+    </ol>
+
+    <h2>Objetivo del juego</h2>
+
+    <p>
+    Trasladar toda la torre de discos desde el poste inicial hacia <strong>otro de los postes</strong>,
+    respetando las reglas del juego.
+    </p>
+
+    <h2>Reglas del juego</h2>
+
+    <ol>
+    <li>Solo se puede mover <strong>un disco a la vez</strong>.</li>
+    <li>Solo se puede mover <strong>el disco que está arriba en cada poste</strong>.</li>
+    <li>Un disco <strong>más grande nunca puede colocarse sobre uno más pequeño</strong>.</li>
+    <li>Los discos deben moverse <strong>de un poste a otro poste</strong>.</li>
+    </ol>
+
+    <h2>Desarrollo del juego</h2>
+
+    <p>
+    Para resolver el rompecabezas:
+    </p>
+
+    <ol>
+    <li>Mueva discos entre los tres postes siguiendo las reglas.</li>
+    <li>Utilice el poste libre como apoyo para reorganizar los discos.</li>
+    <li>Continúe moviendo discos hasta reconstruir la torre completa en otro poste.</li>
+    </ol>
+
+    <h2>Desafío matemático</h2>
+
+    <p>
+    Las Torres de Hanói tienen una característica interesante:
+    </p>
+
+    <p>
+    El número mínimo de movimientos necesarios para resolver el juego depende del número de discos.
+    </p>
+
+    <p>
+    La fórmula es:
+    </p>
+
+    <p>
+    <strong>2ⁿ − 1 movimientos</strong>
+    </p>
+
+    <p>
+    Donde <strong>n</strong> es el número de discos.
+    </p>
+
+    <p>
+    Con <strong>8 discos</strong>, el mínimo es:
+    </p>
+
+    <p>
+    <strong>255 movimientos</strong>
+    </p>
+
+    <h2>Beneficios del juego</h2>
+
+    <ul>
+    <li>Desarrolla el <strong>pensamiento lógico</strong>.</li>
+    <li>Estimula la <strong>planificación estratégica</strong>.</li>
+    <li>Mejora la <strong>concentración</strong>.</li>
+    <li>Fortalece la <strong>paciencia y la perseverancia</strong>.</li>
+    </ul>
+
+    <h2>Sugerencia</h2>
+
+    <p>
+    Intente resolver primero el juego con <strong>menos discos</strong> para comprender la estrategia
+    y luego aumente la dificultad usando todos los discos.
+    </p>
+
+</div>
+
+<script>
+  const archivo = window.location.pathname.split("/").pop();
+  const slug = archivo.replace("_instructivo.html", "");
+  const urlProducto = "../productos/" + slug + ".html";
+  document.getElementById("boton-volver-producto").href = urlProducto;
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Instructivo Quince - NOVO</title>
+    <link rel="stylesheet" href="../estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<nav class="menu">
+  <div class="menu-izquierda">
+    <a href="../index.html">Inicio</a>
+    <a href="../catalogo.html" class="activo">Catálogo</a>
+    <a href="../empresa.html">Empresa</a>
+    <a href="../contacto.html">Contacto</a>
+  </div>
+
+  <div class="menu-derecha">
+    <img src="../imagenes/logo.png" alt="NOVO" class="logo-menu">
+  </div>
+</nav>
+
+<div class="contenedor contenido-izquierda">
+
+    <div class="encabezado-instructivo">
+
+    <a href="#" id="boton-volver-producto" class="boton-volver">
+      <i class="fas fa-arrow-left"></i>
+    </a>
+
+    <h1>Instructivo Quince</h1>
+
+</div>
+
+    
+    <h2>Descripción</h2>
+
+    <p>
+    El <strong>Quince</strong> es un clásico juego de lógica y paciencia que consiste en ordenar fichas
+    numeradas dentro de un tablero deslizante.
+    </p>
+
+    <p>
+    El tablero contiene <strong>15 fichas numeradas del 1 al 15</strong> y <strong>un espacio vacío</strong>
+    que permite mover las fichas deslizándolas.
+    </p>
+
+    <p>
+    El desafío consiste en reorganizar las fichas hasta lograr que queden ordenadas correctamente.
+    </p>
+
+    <h2>Componentes</h2>
+
+    <ul>
+    <li>1 tablero deslizante</li>
+    <li>15 fichas numeradas</li>
+    <li>1 espacio libre para el movimiento</li>
+    </ul>
+
+    <h2>Preparación</h2>
+
+    <ol>
+    <li>Coloque las fichas dentro del tablero.</li>
+    <li>Mezcle las fichas deslizando varias de ellas hasta generar una disposición aleatoria.</li>
+    <li>Debe quedar siempre <strong>un espacio vacío</strong> que permitirá mover las fichas.</li>
+    </ol>
+
+    <h2>Objetivo del juego</h2>
+
+    <p>
+    Ordenar las fichas <strong>del 1 al 15</strong> utilizando el espacio vacío para desplazarlas.
+    </p>
+
+    <p>
+    La posición final correcta debe quedar así:
+    </p>
+
+    <p>
+    <strong>
+    1 2 3 4<br>
+    5 6 7 8<br>
+    9 10 11 12<br>
+    13 14 15 ☐
+    </strong>
+    </p>
+
+    <h2>Desarrollo del juego</h2>
+
+    <p>
+    Las fichas se mueven <strong>deslizándolas hacia el espacio vacío</strong>.
+    </p>
+
+    <p>
+    En cada movimiento:
+    </p>
+
+    <ol>
+    <li>Elija una ficha que esté <strong>junto al espacio vacío</strong>.</li>
+    <li>Deslícela hacia el espacio libre.</li>
+    <li>El espacio vacío cambia de posición permitiendo nuevos movimientos.</li>
+    </ol>
+
+    <p>
+    Las fichas solo pueden moverse:
+    </p>
+
+    <ul>
+    <li>Hacia arriba</li>
+    <li>Hacia abajo</li>
+    <li>Hacia la izquierda</li>
+    <li>Hacia la derecha</li>
+    </ul>
+
+    <p>
+    No se permite levantar ni saltar fichas.
+    </p>
+
+    <h2>Reglas importantes</h2>
+
+    <ul>
+    <li>Solo puede moverse <strong>una ficha a la vez</strong>.</li>
+    <li>Las fichas deben deslizarse siempre hacia el espacio vacío.</li>
+    <li>No se pueden sacar las fichas del tablero durante el juego.</li>
+    </ul>
+
+    <h2>Final del juego</h2>
+
+    <p>
+    El juego termina cuando todas las fichas quedan <strong>ordenadas correctamente del 1 al 15</strong>.
+    </p>
+
+    <h2>Consejos estratégicos</h2>
+
+    <ul>
+    <li>Intente ordenar primero la <strong>fila superior</strong>.</li>
+    <li>Luego continúe con las siguientes filas.</li>
+    <li>Deje para el final las <strong>últimas dos fichas</strong>, que suelen requerir varios movimientos para colocarse correctamente.</li>
+    </ul>
+
+</div>
+
+<script>
+  const archivo = window.location.pathname.split("/").pop();
+  const slug = archivo.replace("_instructivo.html", "");
+  const urlProducto = "../productos/" + slug + ".html";
+  document.getElementById("boton-volver-producto").href = urlProducto;
+</script>
+
+</body>
+
+</html>

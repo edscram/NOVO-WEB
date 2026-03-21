@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Instructivo Damas Chinas - NOVO</title>
+    <link rel="stylesheet" href="../estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<nav class="menu">
+  <div class="menu-izquierda">
+    <a href="../index.html">Inicio</a>
+    <a href="../catalogo.html" class="activo">Catálogo</a>
+    <a href="../empresa.html">Empresa</a>
+    <a href="../contacto.html">Contacto</a>
+  </div>
+
+  <div class="menu-derecha">
+    <img src="../imagenes/logo.png" alt="NOVO" class="logo-menu">
+  </div>
+</nav>
+
+<div class="contenedor contenido-izquierda">
+
+    <div class="encabezado-instructivo">
+
+    <a href="#" id="boton-volver-producto" class="boton-volver">
+      <i class="fas fa-arrow-left"></i>
+    </a>
+
+    <h1>Instructivo Damas Chinas</h1>
+
+</div>
+
+    
+    <h2>Descripción</h2>
+
+    <p>
+    <strong>Damas Chinas</strong> es un juego de estrategia para <strong>2 a 6 jugadores</strong>.
+    El objetivo es trasladar todas las fichas propias desde la punta inicial de la estrella
+    hasta la punta opuesta antes que los demás jugadores.
+    </p>
+
+    <p>
+    El tablero tiene forma de <strong>estrella de seis puntas</strong> y cada jugador comienza
+    con sus fichas agrupadas en uno de los triángulos.
+    </p>
+
+    <h2>Componentes</h2>
+
+    <ul>
+    <li>1 tablero en forma de estrella</li>
+    <li>60 fichas, 10 por color</li>
+    </ul>
+
+    <h2>Preparación</h2>
+
+    <ol>
+    <li>Cada jugador elige un color.</li>
+    <li>Coloque las 10 fichas en uno de los triángulos de la estrella.</li>
+    <li>El objetivo de cada jugador será el triángulo exactamente opuesto al inicial.</li>
+    </ol>
+
+    <p>
+    Ejemplo: si un jugador comienza en la punta inferior, deberá llevar todas sus fichas a la punta superior.
+    </p>
+
+    <h2>Objetivo del juego</h2>
+
+    <p>
+    Ser el primer jugador en mover todas sus fichas desde su triángulo inicial
+    hasta el triángulo opuesto.
+    </p>
+
+    <h2>Desarrollo del juego</h2>
+
+    <p>
+    Los jugadores juegan por turnos en sentido horario.
+    </p>
+
+    <p>
+    En su turno, un jugador puede realizar una de las siguientes acciones:
+    </p>
+
+    <h3>Movimiento simple</h3>
+
+    <p>
+    Mover una ficha a una casilla adyacente libre.
+    </p>
+
+    <h3>Saltos</h3>
+
+    <p>
+    Una ficha puede saltar sobre otra ficha, propia o de otro jugador,
+    si la casilla inmediatamente después está libre.
+    </p>
+
+    <ul>
+    <li>Los saltos pueden encadenarse.</li>
+    <li>Durante un turno, una ficha puede realizar varios saltos consecutivos.</li>
+    <li>No se capturan fichas; el salto solo sirve para avanzar.</li>
+    </ul>
+
+    <h2>Reglas importantes</h2>
+
+    <ul>
+    <li>Las fichas no se eliminan del tablero.</li>
+    <li>Se puede saltar sobre fichas propias o de otros jugadores.</li>
+    <li>No es obligatorio realizar saltos múltiples.</li>
+    <li>Un turno termina cuando el jugador decide detener sus saltos.</li>
+    </ul>
+
+    <h2>Final del juego</h2>
+
+    <p>
+    El juego termina cuando un jugador logra colocar todas sus fichas
+    en el triángulo objetivo.
+    </p>
+
+    <p>
+    Ese jugador es declarado ganador.
+    </p>
+
+    <p>
+    En partidas con más de dos jugadores, los demás pueden continuar jugando
+    para determinar las posiciones siguientes.
+    </p>
+
+    <h2>Consejos estratégicos</h2>
+
+    <ul>
+    <li>Aprovechar cadenas largas de saltos permite avanzar más rápido.</li>
+    <li>Mantener fichas agrupadas facilita crear plataformas de salto.</li>
+    <li>Evitar bloquear el propio triángulo de salida.</li>
+    </ul>
+
+    <h2>Variante para 2 jugadores</h2>
+
+    <p>
+    En partidas de dos jugadores se utilizan dos triángulos opuestos.
+    Cada jugador debe trasladar sus fichas al triángulo del oponente.
+    </p>
+
+</div>
+
+<script>
+  // Obtener nombre del archivo actual (ej: seis_instructivo.html)
+  const archivo = window.location.pathname.split("/").pop();
+
+  // Convertir a slug (quitar "_instructivo.html")
+  const slug = archivo.replace("_instructivo.html", "");
+
+  // Construir ruta al producto
+  const urlProducto = "../productos/" + slug + ".html";
+
+  // Asignar al botón
+  document.getElementById("boton-volver-producto").href = urlProducto;
+</script>
+
+</body>
+
+</html>

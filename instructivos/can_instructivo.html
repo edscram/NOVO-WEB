@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Instructivo Pista Zigzag - NOVO</title>
+    <link rel="stylesheet" href="../estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<nav class="menu">
+  <div class="menu-izquierda">
+    <a href="../index.html">Inicio</a>
+    <a href="../catalogo.html" class="activo">Catálogo</a>
+    <a href="../empresa.html">Empresa</a>
+    <a href="../contacto.html">Contacto</a>
+  </div>
+
+  <div class="menu-derecha">
+    <img src="../imagenes/logo.png" alt="NOVO" class="logo-menu">
+  </div>
+</nav>
+
+<div class="contenedor contenido-izquierda">
+
+    <div class="encabezado-instructivo">
+
+    <a href="#" id="boton-volver-producto" class="boton-volver">
+      <i class="fas fa-arrow-left"></i>
+    </a>
+
+    <h1>Instructivo Pista Zigzag</h1>
+
+</div>
+
+    
+    <h2>Descripción</h2>
+
+    <p>
+    La <strong>Pista Zigzag</strong> es un juego de destreza y coordinación diseñado para desarrollar
+    la concentración, la motricidad fina y la coordinación ojo-mano.
+    </p>
+
+    <p>
+    Las canicas descienden por una pista formada por varios niveles en zigzag.
+    El desafío consiste en mantener el movimiento continuo de las canicas evitando que se detengan.
+    </p>
+
+    <h2>Componentes</h2>
+
+    <ul>
+    <li>1 estructura de pista Zigzag</li>
+    <li>15 canicas</li>
+    </ul>
+
+    <h2>Preparación</h2>
+
+    <ol>
+    <li>Coloque la pista sobre una superficie firme y nivelada.</li>
+    <li>Ubique las canicas en la <strong>fila superior</strong> de la pista.</li>
+    <li>Coloque una canica adicional en la <strong>segunda fila</strong> para activar el movimiento inicial.</li>
+    </ol>
+
+    <h2>Objetivo del juego</h2>
+
+    <p>
+    Mantener las canicas en movimiento continuo a lo largo de la pista evitando que se detengan.
+    </p>
+
+    <h2>Desarrollo del juego</h2>
+
+    <p>
+    Una vez iniciada la pista, las canicas comenzarán a descender <strong>una por una</strong>
+    por los diferentes niveles.
+    </p>
+
+    <p>
+    Las canicas rodarán hacia abajo <strong>zigzagueando en cada nivel</strong>
+    hasta llegar al contenedor ubicado al final de la última fila.
+    </p>
+
+    <p>
+    Cada vez que una canica llegue al contenedor inferior, el jugador debe:
+    </p>
+
+    <ol>
+    <li>Tomar la canica.</li>
+    <li>Colocarla nuevamente en la <strong>fila superior</strong>.</li>
+    </ol>
+
+    <p>
+    De esta manera se mantiene el flujo continuo de canicas en la pista.
+    </p>
+
+    <h2>Reglas importantes</h2>
+
+    <ul>
+    <li>El objetivo es evitar que el flujo de canicas se detenga.</li>
+    <li>Las canicas deben colocarse nuevamente en la parte superior cada vez que lleguen al contenedor.</li>
+    <li>El ejercicio puede repetirse varias veces para mejorar la coordinación y la concentración.</li>
+    </ul>
+
+    <h2>Beneficios del juego</h2>
+
+    <ul>
+    <li>Desarrolla la <strong>motricidad fina</strong>.</li>
+    <li>Mejora la <strong>coordinación ojo-mano</strong>.</li>
+    <li>Favorece la <strong>concentración</strong>.</li>
+    <li>Estimula la destreza manual.</li>
+    </ul>
+
+    <h2>Sugerencia de uso</h2>
+
+    <p>
+    Se recomienda realizar el ejercicio alternando el uso de <strong>cada mano</strong>,
+    lo que ayuda a fortalecer la coordinación y el control de movimientos.
+    </p>
+
+</div>
+
+<script>
+  const archivo = window.location.pathname.split("/").pop();
+  const slug = archivo.replace("_instructivo.html", "");
+  const urlProducto = "../productos/" + slug + ".html";
+  document.getElementById("boton-volver-producto").href = urlProducto;
+</script>
+
+</body>
+
+</html>

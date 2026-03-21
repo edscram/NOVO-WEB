@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Producto - NOVO</title>
+  <link rel="stylesheet" href="../estilos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- DATOS DEL PRODUCTO -->
+  <script id="datos-producto" type="application/json">
+  {
+      "producto": "Encaje de animales salvajes",
+      "slug": "a-sal",
+      "codigo": "A-SAL",
+      "precio": 7,
+      "estado": "Activo",
+      "version": "V1",
+      "edad": "3+",
+      "jugadores": "1",
+      "categoria": "Encaje didáctico",
+      "destrezas": "Motricidad fina,Reconocimiento visual",
+      "familia": "Encajes",
+      "imagen": "imagenes/a-sal.jpeg",
+      "pagina": "productos/a-sal.html",
+      "instructivo": "instructivos/a-sal_instructivo.html",
+      "mostrar_en_catalogo": true
+  }
+  </script>
+
+</head>
+
+<body>
+
+<nav class="menu">
+  <div class="menu-izquierda">
+    <a href="../index.html">Inicio</a>
+    <a href="../catalogo.html" class="activo">Catálogo</a>
+    <a href="../empresa.html">Empresa</a>
+    <a href="../contacto.html">Contacto</a>
+  </div>
+
+  <div class="menu-derecha">
+    <img src="../imagenes/logo.png" alt="NOVO" class="logo-menu">
+  </div>
+</nav>
+
+<div class="contenedor producto-pagina">
+
+  <div class="encabezado-instructivo">
+
+    <a href="../catalogo.html" class="boton-volver">
+        <i class="fas fa-arrow-left"></i>
+    </a>
+
+    <h1 class="titulo-producto" id="nombre-producto"></h1>
+
+  </div>
+
+  <div class="producto-imagen-central">
+    <img id="imagen-producto" src="" alt="Producto NOVO">
+  </div>
+
+  <div class="info-producto-lineal">
+    <p><strong>Precio:</strong> <span id="precio-producto"></span></p>
+    <p><strong>Edad:</strong> <span id="edad-producto"></span></p>
+    <p><strong>Jugadores:</strong> <span id="jugadores-producto"></span></p>
+    <p><strong>Categoría:</strong> <span id="categoria-producto"></span></p>
+    <p><strong>Destrezas:</strong> <span id="destrezas-producto"></span></p>
+  </div>
+
+  <div class="botones-producto">
+    <a id="boton-instructivo" href="#" class="boton">
+      Ver instructivo
+    </a>
+
+    <a id="boton-whatsapp" href="https://wa.me/593997712816" class="boton" target="_blank">
+      <i class="fab fa-whatsapp"></i> Comprar
+    </a>
+  </div>
+
+</div>
+
+<script>
+  const datos = JSON.parse(document.getElementById("datos-producto").textContent);
+
+  document.title = datos.producto + " - NOVO";
+  document.getElementById("nombre-producto").textContent = datos.producto;
+
+  const imagen = document.getElementById("imagen-producto");
+  imagen.src = "../" + datos.imagen;
+  imagen.alt = datos.producto + " NOVO";
+
+  document.getElementById("precio-producto").textContent = "$" + datos.precio;
+  document.getElementById("edad-producto").textContent = datos.edad || "-";
+  document.getElementById("jugadores-producto").textContent = datos.jugadores || "-";
+  document.getElementById("categoria-producto").textContent = datos.categoria || "-";
+
+  const destrezas = datos.destrezas
+    ? datos.destrezas.split(",").map(d => d.trim()).join(" / ")
+    : "-";
+
+  document.getElementById("destrezas-producto").textContent = destrezas;
+
+  document.getElementById("boton-instructivo").href = "../" + datos.instructivo;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Instructivo Solitario - NOVO</title>
+    <link rel="stylesheet" href="../estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<nav class="menu">
+  <div class="menu-izquierda">
+    <a href="../index.html">Inicio</a>
+    <a href="../catalogo.html" class="activo">Catálogo</a>
+    <a href="../empresa.html">Empresa</a>
+    <a href="../contacto.html">Contacto</a>
+  </div>
+
+  <div class="menu-derecha">
+    <img src="../imagenes/logo.png" alt="NOVO" class="logo-menu">
+  </div>
+</nav>
+
+<div class="contenedor contenido-izquierda">
+
+    <div class="encabezado-instructivo">
+
+    <a href="#" id="boton-volver-producto" class="boton-volver">
+      <i class="fas fa-arrow-left"></i>
+    </a>
+
+    <h1>Instructivo Solitario</h1>
+
+</div>
+
+    
+    <h2>Descripción</h2>
+
+    <p>
+    El <strong>Solitario</strong> es un clásico juego de lógica y estrategia para un solo jugador.
+    El tablero contiene 25 posiciones, de las cuales 24 están ocupadas por fichas al inicio del juego.
+    </p>
+
+    <p>
+    El objetivo es eliminar fichas mediante saltos hasta dejar la menor cantidad posible en el tablero.
+    </p>
+
+    <h2>Componentes</h2>
+
+    <ul>
+    <li>1 tablero con 25 agujeros</li>
+    <li>24 fichas</li>
+    </ul>
+
+    <h2>Preparación</h2>
+
+    <ol>
+    <li>Coloque una ficha en cada agujero del tablero.</li>
+    <li>Deje <strong>libre únicamente el agujero central</strong>.</li>
+    </ol>
+
+    <h2>Objetivo del juego</h2>
+
+    <p>
+    Eliminar la mayor cantidad de fichas posible mediante movimientos de salto.
+    </p>
+
+    <p>
+    El objetivo ideal es terminar la partida dejando <strong>una sola ficha en el tablero</strong>.
+    </p>
+
+    <h2>Desarrollo del juego</h2>
+
+    <p>
+    Las fichas se mueven <strong>saltando sobre una ficha adyacente</strong> hacia un agujero vacío.
+    </p>
+
+    <p>
+    Para realizar un movimiento:
+    </p>
+
+    <ol>
+    <li>Elija una ficha que tenga <strong>una ficha vecina y un espacio vacío inmediatamente después</strong>.</li>
+    <li>Salte sobre la ficha vecina hacia el espacio vacío.</li>
+    <li>La ficha que fue saltada <strong>se retira del tablero</strong>.</li>
+    </ol>
+
+    <p>
+    Las fichas solo pueden moverse en línea recta:
+    </p>
+
+    <ul>
+    <li>Hacia arriba</li>
+    <li>Hacia abajo</li>
+    <li>Hacia la izquierda</li>
+    <li>Hacia la derecha</li>
+    </ul>
+
+    <p>
+    No se permiten movimientos en diagonal.
+    </p>
+
+    <h2>Reglas importantes</h2>
+
+    <ul>
+    <li>Cada salto elimina <strong>una ficha del tablero</strong>.</li>
+    <li>Solo se puede saltar sobre <strong>una ficha a la vez</strong>.</li>
+    <li>El salto debe terminar siempre en un <strong>agujero vacío</strong>.</li>
+    </ul>
+
+    <h2>Final del juego</h2>
+
+    <p>
+    El juego termina cuando <strong>no quedan movimientos posibles</strong>.
+    </p>
+
+    <p>
+    El resultado depende de la cantidad de fichas restantes:
+    </p>
+
+    <ul>
+    <li>1 ficha: resultado perfecto</li>
+    <li>2 a 3 fichas: excelente resultado</li>
+    <li>4 a 6 fichas: muy buen resultado</li>
+    <li>6 a 10 fichas: buen resultado</li>
+    <li>Más de 10 fichas: se puede intentar nuevamente</li>
+    </ul>
+
+    <h2>Consejos estratégicos</h2>
+
+    <ul>
+    <li>Intente mantener las fichas <strong>cerca del centro del tablero</strong>.</li>
+    <li>Evite aislar fichas en las esquinas.</li>
+    <li>Planifique varios movimientos por adelantado.</li>
+    </ul>
+
+</div>
+
+<script>
+  const archivo = window.location.pathname.split("/").pop();
+  const slug = archivo.replace("_instructivo.html", "");
+  const urlProducto = "../productos/" + slug + ".html";
+  document.getElementById("boton-volver-producto").href = urlProducto;
+</script>
+
+</body>
+
+</html>
