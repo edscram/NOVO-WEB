@@ -195,9 +195,14 @@
 
 <script>
   const archivo = window.location.pathname.split("/").pop();
-  const slug = archivo.replace("_instructivo.html", "");
-  const urlProducto = "../productos/" + slug + ".html";
-  document.getElementById("boton-volver-producto").href = urlProducto;
+  const slug = archivo.replace("_instructivo.html", "").trim();
+
+  const esLocal = window.location.protocol === "file:";
+  const rutaProducto = esLocal
+    ? "../productos/" + slug + ".html"
+    : "/productos/" + slug + ".html";
+
+  document.getElementById("boton-volver-producto").href = rutaProducto;
 </script>
 
 </body>
