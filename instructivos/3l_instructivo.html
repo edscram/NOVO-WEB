@@ -27,9 +27,9 @@
 
     <div class="encabezado-instructivo">
 
-    <a href="#" id="boton-volver-producto" class="boton-volver">
-      <i class="fas fa-arrow-left"></i>
-    </a>
+<a href="javascript:history.back()" class="boton-volver">
+  <i class="fas fa-arrow-left"></i>
+</a>
 
     <h1>Instructivo Tres en Línea</h1>
 
@@ -192,18 +192,6 @@
     </ul>
 
 </div>
-
-<script>
-  const archivo = window.location.pathname.split("/").pop();
-  const slug = archivo.replace("_instructivo.html", "").trim();
-
-  const esLocal = window.location.protocol === "file:";
-  const rutaProducto = esLocal
-    ? "../productos/" + slug + ".html"
-    : "/productos/" + slug + ".html";
-
-  document.getElementById("boton-volver-producto").href = rutaProducto;
-</script>
 
 </body>
 
