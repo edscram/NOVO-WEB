@@ -27,7 +27,7 @@
 
     <div class="encabezado-instructivo">
 
-    <a href="#" id="boton-volver-producto" class="boton-volver">
+    <a href="javascript:history.back()" class="boton-volver">
       <i class="fas fa-arrow-left"></i>
     </a>
 
@@ -137,13 +137,6 @@
     </ul>
 
 </div>
-
-<script>
-  const archivo = window.location.pathname.split("/").pop();
-  const slug = archivo.replace("_instructivo.html", "");
-  const urlProducto = "../productos/" + slug + ".html";
-  document.getElementById("boton-volver-producto").href = urlProducto;
-</script>
 
 </body>
 
